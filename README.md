@@ -1,24 +1,30 @@
-# README
+# Affiliate System MVP (Rails 8)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository is the starting point for a series where I document the evolution of an affiliate tracking system — from a simple Rails monolith to a fully distributed architecture with edge ingestion, event pipelines, attribution engines, and anti-fraud layers.
 
-Things you may want to cover:
+## What’s included
 
-* Ruby version
+- Rails 8 API-only skeleton
+- Core domain models:
+  - Affiliates
+  - Offers
+  - Clicks
+  - Conversions
+  - Payouts
+  - Domain validation
+- Initial services:
+  - AttributionService
+  - FraudCheckService
+- Background jobs (empty for now)
 
-* System dependencies
+## What’s next
 
-* Configuration
+Each post in the series will expand this codebase:
+1. Add attribution logic
+2. Add fraud detection
+3. Introduce real-time counters
+4. Decouple tracking into a lightweight ingestion service
+5. Move events into a distributed pipeline
+6. Scale attribution and analytics
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Follow the series for updates.
