@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  affiliate: one
+  offer: one
+  affiliate_domain: one
+  referral_code: MyString
+  ip: MyString
+  user_agent: MyText
+  referer: MyText
+  request_id: MyString
+  clicked_at: 2026-02-25 10:33:56
+  raw_metadata: 
+
+two:
+  affiliate: two
+  offer: two
+  affiliate_domain: two
+  referral_code: MyString
+  ip: MyString
+  user_agent: MyText
+  referer: MyText
+  request_id: MyString
+  clicked_at: 2026-02-25 10:33:56
+  raw_metadata: 

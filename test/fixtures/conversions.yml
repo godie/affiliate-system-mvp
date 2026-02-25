@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  affiliate: one
+  offer: one
+  click: one
+  external_order_id: MyString
+  amount_cents: 1
+  currency: MyString
+  status: MyString
+  attributed_at: 2026-02-25 10:46:52
+  raw_metadata: 
+
+two:
+  affiliate: two
+  offer: two
+  click: two
+  external_order_id: MyString
+  amount_cents: 1
+  currency: MyString
+  status: MyString
+  attributed_at: 2026-02-25 10:46:52
+  raw_metadata: 

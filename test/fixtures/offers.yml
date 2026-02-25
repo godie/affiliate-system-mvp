@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  slug: MyString
+  payout_cents: 1
+  currency: MyString
+  status: MyString
+  attribution_window_seconds: 1
+
+two:
+  name: MyString
+  slug: MyString
+  payout_cents: 1
+  currency: MyString
+  status: MyString
+  attribution_window_seconds: 1
