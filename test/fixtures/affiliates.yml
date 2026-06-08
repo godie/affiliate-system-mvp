@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  email: MyString
-  status: MyString
-  referral_code: MyString
+  name: Diego Mendoza
+  email: diego@example.com
+  status: active
+  referral_code: REF001
 
 two:
-  name: MyString
-  email: MyString
-  status: MyString
-  referral_code: MyString
+  name: Ana Salas
+  email: ana@example.com
+  status: active
+  referral_code: REF002

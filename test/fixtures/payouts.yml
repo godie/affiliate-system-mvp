@@ -2,18 +2,18 @@
 
 one:
   affiliate: one
-  period_start: 2026-02-25 10:46:55
-  period_end: 2026-02-25 10:46:55
-  status: MyString
+  period_start: 2026-02-01 00:00:00
+  period_end: 2026-02-28 23:59:59
+  status: pending
   total_conversions: 1
-  total_amount_cents: 1
-  currency: MyString
+  total_amount_cents: 5000
+  currency: USD
 
 two:
   affiliate: two
-  period_start: 2026-02-25 10:46:55
-  period_end: 2026-02-25 10:46:55
-  status: MyString
+  period_start: 2026-02-01 00:00:00
+  period_end: 2026-02-28 23:59:59
+  status: paid
   total_conversions: 1
-  total_amount_cents: 1
-  currency: MyString
+  total_amount_cents: 10000
+  currency: USD

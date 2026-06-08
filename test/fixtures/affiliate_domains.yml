@@ -2,16 +2,16 @@
 
 one:
   affiliate: one
-  domain: MyString
-  verification_method: MyString
-  verification_token: MyString
+  domain: example.com
+  verification_method: dns
+  verification_token: tok-abc-123
   verified_at: 2026-02-25 10:33:51
-  status: MyString
+  status: verified
 
 two:
   affiliate: two
-  domain: MyString
-  verification_method: MyString
-  verification_token: MyString
+  domain: sample.org
+  verification_method: file
+  verification_token: tok-def-456
   verified_at: 2026-02-25 10:33:51
-  status: MyString
+  status: verified

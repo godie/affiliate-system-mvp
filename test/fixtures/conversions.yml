@@ -4,20 +4,20 @@ one:
   affiliate: one
   offer: one
   click: one
-  external_order_id: MyString
-  amount_cents: 1
-  currency: MyString
-  status: MyString
+  external_order_id: ORDER-111
+  amount_cents: 5000
+  currency: USD
+  status: attributed
   attributed_at: 2026-02-25 10:46:52
-  raw_metadata: 
+  raw_metadata: '{"source": "web"}'
 
 two:
   affiliate: two
   offer: two
   click: two
-  external_order_id: MyString
-  amount_cents: 1
-  currency: MyString
-  status: MyString
+  external_order_id: ORDER-222
+  amount_cents: 10000
+  currency: USD
+  status: attributed
   attributed_at: 2026-02-25 10:46:52
-  raw_metadata: 
+  raw_metadata: '{"source": "mobile"}'

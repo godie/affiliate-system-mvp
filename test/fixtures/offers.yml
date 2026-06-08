@@ -1,17 +1,17 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  slug: MyString
-  payout_cents: 1
-  currency: MyString
-  status: MyString
-  attribution_window_seconds: 1
+  name: Summer Sale
+  slug: summer-sale
+  payout_cents: 500
+  currency: USD
+  status: active
+  attribution_window_seconds: 86400
 
 two:
-  name: MyString
-  slug: MyString
-  payout_cents: 1
-  currency: MyString
-  status: MyString
-  attribution_window_seconds: 1
+  name: Winter Promo
+  slug: winter-promo
+  payout_cents: 1000
+  currency: USD
+  status: active
+  attribution_window_seconds: 172800

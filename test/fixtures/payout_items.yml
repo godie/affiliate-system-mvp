@@ -3,9 +3,9 @@
 one:
   payout: one
   conversion: one
-  amount_cents: 1
+  amount_cents: 5000
 
 two:
   payout: two
   conversion: two
-  amount_cents: 1
+  amount_cents: 10000
