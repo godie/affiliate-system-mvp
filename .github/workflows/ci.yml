@@ -18,6 +18,10 @@ jobs:
         with:
           ruby-version: .ruby-version
           bundler-cache: true
+          bundler: Gemfile.lock
+
+      - name: Verify Ruby version
+        run: ruby -v
 
       - name: Scan for common Rails security vulnerabilities using static analysis
         run: bin/brakeman --no-pager
@@ -33,6 +37,10 @@ jobs:
         with:
           ruby-version: .ruby-version
           bundler-cache: true
+          bundler: Gemfile.lock
+
+      - name: Verify Ruby version
+        run: ruby -v
 
       - name: Lint code for consistent style
         run: bin/rubocop -f github
@@ -68,10 +76,31 @@ jobs:
         with:
           ruby-version: .ruby-version
           bundler-cache: true
+          bundler: Gemfile.lock
+
+      - name: Verify Ruby and Bundler versions
+        run: |
+          ruby -v
+          bundle -v
+
+      - name: Cache bootsnap compile cache
+        uses: actions/cache@v4
+        with:
+          path: tmp/cache/bootsnap
+          key: bootsnap-${{ runner.os }}-${{ hashFiles('.ruby-version', 'Gemfile.lock') }}
+          restore-keys: |
+            bootsnap-${{ runner.os }}-
+
+      - name: Prepare test database
+        env:
+          RAILS_ENV: test
+          DATABASE_URL: postgres://postgres:postgres@localhost:5432
+          # REDIS_URL: redis://localhost:6379/0
+        run: bin/rails db:test:prepare
 
       - name: Run tests
         env:
           RAILS_ENV: test
           DATABASE_URL: postgres://postgres:postgres@localhost:5432
           # REDIS_URL: redis://localhost:6379/0
-        run: bin/rails db:test:prepare test
+        run: bin/rails test
